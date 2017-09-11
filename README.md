@@ -1,28 +1,9 @@
-# PhoneGap Plugin BarcodeScanner
-================================
-
-[![Build Status](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner.svg)](https://travis-ci.org/phonegap/phonegap-plugin-barcodescanner)
-
-**Note: This repository is no longer maintained. The official repository is now at [phonegap/phonegap-plugin-barcodescanner](http://github.com/phonegap/phonegap-plugin-barcodescanner).**
+BarcodeScanner
+==============
 
 Cross-platform BarcodeScanner for Cordova / PhoneGap.
 
-Follows the [Cordova Plugin spec](http://cordova.apache.org/docs/en/5.0.0/plugin_ref_spec.md), so that it works with [Plugman](https://github.com/apache/cordova-plugman).
-
-## Installation
-
-    
-This requires phonegap 5.0+ ( current stable v3.0.0 )
-
-    phonegap plugin add phonegap-plugin-barcodescanner
-
-Older versions of phonegap can still install via the __deprecated__ id ( stale v2.0.1 )
-
-    phonegap plugin add com.phonegap.plugins.barcodescanner
-
-It is also possible to install via repo url directly ( unstable )
-
-    phonegap plugin add https://github.com/phonegap/phonegap-plugin-barcodescanner.git
+Follows the [Cordova Plugin spec](http://cordova.apache.org/docs/en/3.0.0/plugin_ref_spec.md), so that it works with [Plugman](https://github.com/apache/cordova-plugman).
 
 ### Supported Platforms
 
@@ -30,8 +11,6 @@ It is also possible to install via repo url directly ( unstable )
 - iOS
 - Windows 8
 - Windows Phone 8
-- BlackBerry 10
-- Browser
 
 Note: the Android source for this project includes an Android Library Project.
 plugman currently doesn't support Library Project refs, so its been
@@ -107,17 +86,6 @@ The following barcode types are currently supported:
 * AZTEC
 * PDF417
 
-### BlackBerry 10
-* UPC_A
-* UPC_E
-* EAN_8
-* EAN_13
-* CODE_39
-* CODE_128
-* ITF
-* DATA_MATRIX
-* AZTEC
-
 `success` and `fail` are callback functions. Success is passed an object with data, type and cancelled properties. Data is the text representation of the barcode data, type is the type of barcode detected and cancelled is whether or not the user cancelled the scan.
 
 A full example could be:
@@ -158,19 +126,15 @@ A full example could be:
 ```
 
 ## Windows8 quirks ##
-Windows 8 implementation currently doesn't support encode functionality.
+Windows 8 implenemtation currently doesn't support encode functionality.
 
 ## Windows Phone 8 quirks ##
-Windows Phone 8 implementation currently doesn't support encode functionality.
-
-## BlackBerry 10 quirks
-BlackBerry 10 implementation currently doesn't support encode functionality.
-Cancelling a scan on BlackBerry 10 is done by touching the screen.
+Windows Phone 8 implenemtation currently doesn't support encode functionality.
 
 ## Thanks on Github ##
 
-So many -- check out the original [iOS](https://github.com/phonegap/phonegap-plugins/tree/DEPRECATED/iOS/BarcodeScanner),  [Android](https://github.com/phonegap/phonegap-plugins/tree/DEPRECATED/Android/BarcodeScanner) and 
-[BlackBerry 10](https://github.com/blackberry/WebWorks-Community-APIs/tree/master/BB10-Cordova/BarcodeScanner) repos.
+So many -- check out the original [iOS](https://github.com/phonegap/phonegap-plugins/tree/DEPRECATED/iOS/BarcodeScanner) and [Android](https://github.com/phonegap/phonegap-plugins/tree/DEPRECATED/Android/BarcodeScanner) repos.
+
 
 ## Licence ##
 
