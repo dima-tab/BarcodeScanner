@@ -20,6 +20,7 @@ import com.google.zxing.client.android.Intents;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
+import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -141,7 +142,7 @@ public class BarcodeScanner extends CordovaPlugin {
         Point displaySize = getDisplaySize(activity);
 
         // set default size for scanning area
-        intentScan.putExtra(Intents.Scan.WIDTH, calculateEdge(0.5, displaySize.y));
+        intentScan.putExtra(Intents.Scan.WIDTH, calculateEdge(1.0, displaySize.y));
         intentScan.putExtra(Intents.Scan.HEIGHT, calculateEdge(0.5, displaySize.x));
 
         // add config as intent extras
