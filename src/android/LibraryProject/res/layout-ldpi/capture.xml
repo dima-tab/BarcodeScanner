@@ -216,4 +216,13 @@
             android:text="@string/msg_default_status"
             android:textColor="@color/status_text"/>
 
+    <ToggleButton android:id="@+id/torch_button"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="5dip"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/torch_icon"
+        />
+
 </FrameLayout>
