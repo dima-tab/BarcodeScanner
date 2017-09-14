@@ -2,5 +2,4 @@
 bin/
 .classpath
 .project
-*.iml
-local.properties
+barcode-plugin/
